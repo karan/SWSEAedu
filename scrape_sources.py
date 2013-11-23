@@ -1,17 +1,15 @@
 #!/usr/bin/env python
 
 import json
+import re
 from urllib2 import urlopen
 from collections import defaultdict
 
 from bs4 import BeautifulSoup
-import dataset
 
-CODE = 'BIOEN'
+CODE = 'CSE'
 
 BASE_URL = "http://www.washington.edu/students/crscat/%s.html" % CODE.lower()
-
-db = dataset.connect('postgresql:///course.db')
 
 soup = BeautifulSoup(urlopen(BASE_URL).read().replace('<BR>', '<p>'))
 ps = soup.findAll('p')
@@ -45,10 +43,6 @@ for i in range(len(ps) - 2):
         catalog[course] = {'name': name,
                            'description': description,
                            'prerequisite': pre_req}
-
-table = db[CODE.lower] # create a table
-for record in catalog:
-    table.insert(record)
 
 data_json = json.dumps(catalog, indent=4, sort_keys=True)
 
