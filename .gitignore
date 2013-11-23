@@ -1,38 +1,43 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Server Error &middot; Gist</title>
-    <style type="text/css" media="screen">
-      body {
-        background: #f1f1f1;
-        font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased; }
+*.py[cod]
 
-      .container { margin: 100px auto; width: 600px; text-align: center; }
+# C extensions
+*.so
 
-      a { color: #4183c4; text-decoration: none; }
-      a:visited { color: #4183c4 }
-      a:hover { text-decoration: none; }
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
 
-      h1 { letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px; text-shadow: 0 1px 0 #fff; }
-      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0 40px; }
+# Installer logs
+pip-log.txt
 
-      ul { border-top: 1px solid #ccc; list-style: none; margin: 20px 0; padding: 20px 0; }
-      li { display: table-cell; font-weight: bold; width: 1%; }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>OH NOES, 404.</h1>
-      <p>We seem to have missed the <em>gist</em> of that <em>gist</em> you were looking for.</p>
-      <ul id="error-suggestions">
-          <li><a href="https://github.com/contact">Contact Support</a></li>
-          <li><a href="https://status.github.com">Status Site</a></li>
-          <li><a href="https://twitter.com/github">@github</a></li>
-      </ul>
-      <p><img src="https://github.s3.amazonaws.com/media/maint-logo.png" alt="GitHub"></p>
-    </div>
-  </body>
-</html>
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Komodo
+.komodotools/
+*.komodoproject
+
+*.cfg
+.DS_Store
