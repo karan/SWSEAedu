@@ -1,5 +1,615 @@
 {
-    "AMATH 352": {
+    "CSE 120": {
+        "choice_req": [], 
+        "description": "Introduces fundamental concepts of computer science and computational thinking. Includes logical reasoning, problem solving, data representation, abstraction, the creation of digital artifacts such as web pages and programs, managing complexity, operation of computers and networks, effective web searching, ethical, legal and social aspects of information technology. May not be taken for credit if credit earned in CSE 100/INFO 100", 
+        "hard_req": [], 
+        "name": "Computer Science Principles (5) NW, QSR", 
+        "other_req": []
+    }, 
+    "CSE 131": {
+        "choice_req": [], 
+        "description": "Covers the fundamentals of digital photography, including computational imaging; the elements of photographic composition and design; and the future of internet-enabled photography", 
+        "hard_req": [], 
+        "name": "Science and Art of Digital Photography (4) VLPA", 
+        "other_req": []
+    }, 
+    "CSE 140": {
+        "choice_req": [], 
+        "description": "Introduction to computer programming. Assignments solve real data manipulation tasks from science, engineering, business, and the humanities, enabling students to solve such problems in their own discipline. Covers concepts of computational thinking and problem-solving, data analysis, the Python programming language, control and data abstraction, file processing, and data visualization", 
+        "hard_req": [], 
+        "name": "Introduction to Data Programming (4) NW, QSR", 
+        "other_req": []
+    }, 
+    "CSE 142": {
+        "choice_req": [], 
+        "description": "Basic programming-in-the-small abilities and concepts including procedural programming (methods, parameters, return values), basic control structures (sequence, if/else, for loop, while loop), file processing, arrays and an introduction to defining objects. Offered: AWSpS", 
+        "hard_req": [], 
+        "name": "Computer Programming I (4) NW, QSR", 
+        "other_req": []
+    }, 
+    "CSE 143": {
+        "choice_req": [], 
+        "description": "Continuation of CSE 142. Concepts of data abstraction and encapsulation including stacks, queues, linked lists, binary trees, recursion, instruction to complexity and use of predefined collection classes.", 
+        "hard_req": [
+            "CSE 142"
+        ], 
+        "name": "Computer Programming II (5) NW, QSR", 
+        "other_req": []
+    }, 
+    "CSE 154": {
+        "choice_req": [
+            [
+                "CSE 140", 
+                "CSE 142", 
+                "CSE 143"
+            ]
+        ], 
+        "description": "Covers languages, tools, and techniques for developing interactive and dynamic web pages. Topics include page styling, design, and layout; client and server side scripting; web security; and interacting with data sources such as databases.", 
+        "hard_req": [], 
+        "name": "Web Programming (5) QSR", 
+        "other_req": []
+    }, 
+    "CSE 190": {
+        "choice_req": [], 
+        "description": "", 
+        "hard_req": [], 
+        "name": "Current Topics in Computer Science and Engineering (1-5, max. 15)", 
+        "other_req": []
+    }, 
+    "CSE 311": {
+        "choice_req": [
+            [
+                "MATH 126", 
+                "MATH 136"
+            ]
+        ], 
+        "description": "Examines fundamentals of logic, set theory, induction, and algebraic structures with applications to computing; finite state machines; and limits of computability.", 
+        "hard_req": [
+            "CSE 143"
+        ], 
+        "name": "Foundations of Computing I (4) QSR", 
+        "other_req": []
+    }, 
+    "CSE 312": {
+        "choice_req": [], 
+        "description": "Examines fundamentals of enumeration and discrete probability; applications of randomness to computing; polynomial-time versus NP; and NP-completeness.", 
+        "hard_req": [
+            "CSE 311"
+        ], 
+        "name": "Foundations of Computing II (4) QSR", 
+        "other_req": [
+            "CSE 332, which may be taken concurrently"
+        ]
+    }, 
+    "CSE 326": {
+        "choice_req": [], 
+        "description": "Abstract data types and their implementations as data structures. Efficient of algorithms employing these data structures; asymptotic analyses. Dictionaries: balanced search trees, hashing. Priority queues: heaps. Disjoint sets with union, find. Graph algorithms: shortest path, minimum spanning tree, topological sort, search. Sorting. Not available for credit for students who have completed CSE 373.", 
+        "hard_req": [
+            "CSE 321"
+        ], 
+        "name": "Data Structures (4)", 
+        "other_req": []
+    }, 
+    "CSE 331": {
+        "choice_req": [], 
+        "description": "Explores concepts and techniques for design and construction of reliable and maintainable software systems in modern high-level languages; program structure and design; program-correctness approaches, including testing; and event-driven programming (e.g., graphical user interface). Includes substantial project and software-team experience.", 
+        "hard_req": [
+            "CSE 143"
+        ], 
+        "name": "Software Design and Implementation (4)", 
+        "other_req": []
+    }, 
+    "CSE 332": {
+        "choice_req": [
+            [
+                "CSE 311", 
+                "CSE 321"
+            ]
+        ], 
+        "description": "Covers abstract data types and structures including dictionaries, balanced trees, hash tables, priority queues, and graphs; sorting; asymptotic analysis; fundamental graph algorithms including graph search, shortest path, and minimum spanning trees; concurrency and synchronization; and parallelism. Not available for credit for students who have completed CSE 373.", 
+        "hard_req": [], 
+        "name": "Data Abstractions (4)", 
+        "other_req": []
+    }, 
+    "CSE 333": {
+        "choice_req": [], 
+        "description": "Includes substantial programming experience in languages that expose machine characteristics and low-level data representation (e.g., C and C++); explicit memory management; interacting with operating-system services; and cache-aware programming.", 
+        "hard_req": [
+            "CSE 351"
+        ], 
+        "name": "Systems Programming (4)", 
+        "other_req": []
+    }, 
+    "CSE 341": {
+        "choice_req": [], 
+        "description": "Basic concepts of programming languages, including abstraction mechanisms, types, and scoping. Detailed study of several different programming paradigms, such as functional, object-oriented, and logic programming. No credit if CSE 413 has been taken.", 
+        "hard_req": [
+            "CSE 143"
+        ], 
+        "name": "Programming Languages (4)", 
+        "other_req": []
+    }, 
+    "CSE 344": {
+        "choice_req": [
+            [
+                "CSE 311", 
+                "CSE 321"
+            ]
+        ], 
+        "description": "Introduces database management systems and writing applications that use such systems; data models (e.g., relational, semi-structured), query languages (e.g., SQL, XQuery), language bindings, conceptual modeling, transactions, security, database tuning, data warehousing, parallelism, and web-data management.", 
+        "hard_req": [], 
+        "name": "Introduction to Data Management (4)", 
+        "other_req": []
+    }, 
+    "CSE 351": {
+        "choice_req": [], 
+        "description": "Examines key computational abstraction levels below modern high-level languages; number representation, assembly language, introduction to C, memory management, the operating-system process model, high-level machine architecture including the memory hierarchy, and how high-level languages are implemented.", 
+        "hard_req": [
+            "CSE 143"
+        ], 
+        "name": "The Hardware/Software Interface (4)", 
+        "other_req": []
+    }, 
+    "CSE 352": {
+        "choice_req": [], 
+        "description": "Covers digital circuit design, processor design, and systems integration and embedded-systems issues. Includes substantial hardware laboratory.", 
+        "hard_req": [
+            "CSE 311", 
+            "CSE 351"
+        ], 
+        "name": "Hardware Design and Implementation (4)", 
+        "other_req": []
+    }, 
+    "CSE 373": {
+        "choice_req": [], 
+        "description": "Fundamental algorithms and data structures for implementation. Techniques for solving problems by programming. Linked lists, stacks, queues, directed graphs. Trees: representations, traversals. Searching (hashing, binary search trees, multiway trees). Garbage collection, memory management. Internal and external sorting. Intended for non-majors. Not open for credit to students who have completed CSE 326 or CSE 332.", 
+        "hard_req": [
+            "CSE 143"
+        ], 
+        "name": "Data Structures and Algorithms (3)", 
+        "other_req": []
+    }, 
+    "CSE 374": {
+        "choice_req": [], 
+        "description": "Covers key software development concepts and tools not in introductory courses. Concepts of lower-level programming (C/C++) and explicit memory management; techniques and tools for individual and group software development; design, implementation, and testing strategies. Intended for non-majors. Cannot be taken for credit if credit received for CSE 303 or CSE 333.", 
+        "hard_req": [
+            "CSE 143"
+        ], 
+        "name": "Intermediate Programming Concepts and Tools (3)", 
+        "other_req": []
+    }, 
+    "CSE 390": {
+        "choice_req": [], 
+        "description": "Covers topics of current interest in computer science and engineering", 
+        "hard_req": [], 
+        "name": "Special Topics in Computer Science and Engineering (1-5, max. 10)", 
+        "other_req": []
+    }, 
+    "CSE 399": {
+        "choice_req": [], 
+        "description": "Upper-division computer science or computer engineering course, taken through an approved study abroad program, for which there is no direct University of Washington equivalent. Credit/no-credit only", 
+        "hard_req": [], 
+        "name": "CSE Foreign Study (*)", 
+        "other_req": []
+    }, 
+    "CSE 401": {
+        "choice_req": [
+            [
+                "CSE 326 and CSE 378", 
+                "CSE 332 and CSE 351"
+            ]
+        ], 
+        "description": "Fundamentals of compilers and interpreters; symbol tables; lexical analysis, syntax analysis, semantic analysis, code generation, and optimizations for general purpose programming languages. No credit to students who have taken CSE 413.", 
+        "hard_req": [], 
+        "name": "Introduction to Compiler Construction (4)", 
+        "other_req": []
+    }, 
+    "CSE 403": {
+        "choice_req": [
+            [
+                "CSE 303", 
+                "CSE 331"
+            ], 
+            [
+                "CSE 332", 
+                "CSE 326"
+            ]
+        ], 
+        "description": "Fundamentals of software engineering using a group project as the basic vehicle. Topics covered include the software crisis, managing complexity, requirements specification, architectural and detailed design, testing and analysis, software process, and tools and environments.", 
+        "hard_req": [], 
+        "name": "Software Engineering (4)", 
+        "other_req": [
+            "recommended: either CSE 331 or project experience in a work setting"
+        ]
+    }, 
+    "CSE 410": {
+        "choice_req": [], 
+        "description": "Structure and components of hardware and software systems. Machine organization, including central processor and input-output architectures; assembly language programming; operating systems, including process, storage, and file management. Intended for non-majors. No credit to students who have completed CSE 351, CSE 378, or CSE 451.", 
+        "hard_req": [
+            "CSE 373"
+        ], 
+        "name": "Computer Systems (3)", 
+        "other_req": []
+    }, 
+    "CSE 413": {
+        "choice_req": [], 
+        "description": "Basic concepts and implementation strategies for modern functional and object-oriented programming languages such as Scheme and Java. Intended for non-majors. No credit to students who have completed CSE 341 or CSE 401.", 
+        "hard_req": [
+            "CSE 373"
+        ], 
+        "name": "Programming Languages and Their Implementation (3)", 
+        "other_req": []
+    }, 
+    "CSE 414": {
+        "choice_req": [], 
+        "description": "Introduces database management systems and writing applications that use such systems; data models, query languages, transactions, database tuning, data warehousing, and parallelism. Intended for non-majors. Not open for credit to students who have completed CSE 344.", 
+        "hard_req": [
+            "minimum grade of 25 in CSE 143"
+        ], 
+        "name": "Introduction to Database Systems (4)", 
+        "other_req": []
+    }, 
+    "CSE 415": {
+        "choice_req": [], 
+        "description": "Principles and programming techniques of artificial intelligence: LISP, symbol manipulation, knowledge representation, logical and probabilistic reasoning, learning, language understanding, vision, expert systems, and social issues. Intended for non-majors. Not open for credit to students who have completed CSE 473.", 
+        "hard_req": [
+            "CSE 373"
+        ], 
+        "name": "Introduction to Artificial Intelligence (3) NW", 
+        "other_req": []
+    }, 
+    "CSE 417": {
+        "choice_req": [], 
+        "description": "Design and analysis of algorithms and data structures. Efficient algorithms for manipulating graphs and strings. Fast Fourier Transform. Models of computation, including Turing machines. Time and space complexity. NP-complete problems and undecidable problems. Intended for non-majors.", 
+        "hard_req": [
+            "CSE 373"
+        ], 
+        "name": "Algorithms and Computational Complexity (3)", 
+        "other_req": []
+    }, 
+    "CSE 421": {
+        "choice_req": [
+            [
+                "CSE 312", 
+                "CSE 322"
+            ], 
+            [
+                "CSE 326", 
+                "CSE 332"
+            ]
+        ], 
+        "description": "Techniques for design of efficient algorithms. Methods for showing lower bounds on computational complexity. Particular algorithms for sorting, searching, set manipulation, arithmetic, graph problems, pattern matching.", 
+        "hard_req": [], 
+        "name": "Introduction to Algorithms (3)", 
+        "other_req": []
+    }, 
+    "CSE 427": {
+        "choice_req": [], 
+        "description": "Algorithmic and analytic techniques underlying analysis of large-scale biological data sets such as DNA, RNA, and protein sequences or structures, expression and proteomic profiling. Hands-on experience with databases, analysis tools, and genome markers. Applications such as sequence alignment, BLAST, phylogenetics, and Markov models.", 
+        "hard_req": [
+            "either CSE 312", 
+            "CSE 332"
+        ], 
+        "name": "Computational Biology (3)", 
+        "other_req": []
+    }, 
+    "CSE 428": {
+        "choice_req": [
+            [
+                "CSE 303", 
+                "CSE 331"
+            ], 
+            [
+                "CSE 326", 
+                "CSE 332"
+            ]
+        ], 
+        "description": "Designs and implements a software tool or software analysis for an important problem in computational molecular biology.", 
+        "hard_req": [], 
+        "name": "Computational Biology Capstone (5)", 
+        "other_req": []
+    }, 
+    "CSE 431": {
+        "choice_req": [
+            [
+                "CSE 312", 
+                "CSE 322"
+            ]
+        ], 
+        "description": "Models of computation, computable and noncomputable functions, space and time complexity, tractable and intractable functions.", 
+        "hard_req": [], 
+        "name": "Introduction to Theory of Computation (3)", 
+        "other_req": []
+    }, 
+    "CSE 440": {
+        "choice_req": [
+            [
+                "CSE 326", 
+                "CSE 332"
+            ]
+        ], 
+        "description": "Human-Computer Interaction (HCI) theory and techniques. Methods for designing, prototyping, and evaluating user interfaces to computing applications. Human capabilities, interface technology, interface design methods, and interface evaluation tools and techniques.", 
+        "hard_req": [], 
+        "name": "Introduction to HCI: User Interface Design, Prototyping, and Evaluation (5)", 
+        "other_req": []
+    }, 
+    "CSE 441": {
+        "choice_req": [], 
+        "description": "Human-Computer Interaction (HCI) theory and techniques. Advanced methods for designing, prototyping, and evaluating user interfaces to computing applications. Novel interface technology, advanced interface design methods, and prototyping tools.", 
+        "hard_req": [
+            "CSE 440"
+        ], 
+        "name": "Advanced HCI: Advanced User Interface Design, Prototyping, and Evaluation (5)", 
+        "other_req": []
+    }, 
+    "CSE 444": {
+        "choice_req": [], 
+        "description": "The rational data model and the SQL query language. Conceptual modeling: entity/relationships, normal forms. XML, XPath, and XQuery. Transactions: recovery and concurrency control. Implementation of a database system. A medium sized project using a rational database backend.", 
+        "hard_req": [
+            "CSE 332", 
+            "CSE 344"
+        ], 
+        "name": "Database Systems Intenals (4)", 
+        "other_req": []
+    }, 
+    "CSE 446": {
+        "choice_req": [
+            [
+                "CSE 326", 
+                "CSE 332"
+            ], 
+            [
+                "STAT 390", 
+                "STAT 391", 
+                "CSE 312"
+            ]
+        ], 
+        "description": "Methods for designing systems that learn from data and improve with experience. Supervised learning and predictive modeling: decision trees, rule induction, nearest neighbors, Bayesian methods, neural networks, support vector machines, and model ensembles. Unsupervised learning and clustering.", 
+        "hard_req": [], 
+        "name": "Machine Learning (3)", 
+        "other_req": []
+    }, 
+    "CSE 450": {
+        "choice_req": [], 
+        "description": "Open to all students who have an interest in digital animation. Reviews and analyzes films, animated feature films, and television commercials. Emphasizes the technical and aesthetic basics of animation production in industry studio environments", 
+        "hard_req": [], 
+        "name": "Animation Production Seminar (1)", 
+        "other_req": []
+    }, 
+    "CSE 451": {
+        "choice_req": [], 
+        "description": "Principles of operating systems. Process management, memory management, auxiliary storage management, resource allocation. No credit to students who have completed CSE 410 or E E 474.", 
+        "hard_req": [
+            "CSE 351 or CSE 378", 
+            "CSE 326 or CSE 332", 
+            "CSE 333"
+        ], 
+        "name": "Introduction to Operating Systems (4)", 
+        "other_req": []
+    }, 
+    "CSE 452": {
+        "choice_req": [], 
+        "description": "Covers abstractions and implementation techniques in the construction of distributed systems, including cloud computing, distributed storage systems, and distributed caches.", 
+        "hard_req": [
+            "eitherCSE 444, CSE 451, or CSE 461"
+        ], 
+        "name": "Introduction to Distributed Systems (4)", 
+        "other_req": []
+    }, 
+    "CSE 454": {
+        "choice_req": [], 
+        "description": "Design of Internet search engines, including spider architecture, inverted indices, frequency rankings, latent semantic indexing, hyperlink analysis, and refinement interfaces. Construction of scalable and secure web services. Datamining webserver logs to provide personalized and user-targeted services. Large project.", 
+        "hard_req": [
+            "CSE 326 or CSE 332"
+        ], 
+        "name": "Advanced Internet and Web Services (5)", 
+        "other_req": []
+    }, 
+    "CSE 455": {
+        "choice_req": [], 
+        "description": "Introduction to image analysis and interpreting the 3D world from image data. Topics may include segmentation, motion estimation, image mosaics, 3D-shape reconstruction, object recognition, and image retrieval.", 
+        "hard_req": [
+            "CSE 303 or CSE 333", 
+            "CSE 326 or CSE 332", 
+            "STAT 391"
+        ], 
+        "name": "Computer Vision (4)", 
+        "other_req": [
+            "recommended: MATH 308"
+        ]
+    }, 
+    "CSE 456": {
+        "choice_req": [], 
+        "description": "Animation principles and production for story development and design. Design, development, and production of several storyreels, which are a tool for the pre-production of animated features and shorts. Student use authoring tools to present finished work", 
+        "hard_req": [], 
+        "name": "Story Design for Computer Animation (4)", 
+        "other_req": []
+    }, 
+    "CSE 457": {
+        "choice_req": [], 
+        "description": "Introduction to computer image synthesis, modeling, and animation. Topics may include visual perception, displays and framebuffers, image processing, affine and projective transformations, hierarchical modeling, hidden surface elimination, shading, ray-tracing, anti-aliasing, texture mapping, curves, surfaces, particle systems, dynamics, character animation, and animation principles.", 
+        "hard_req": [
+            "CSE 303 or CSE 333", 
+            "CSE 326 or CSE 332"
+        ], 
+        "name": "Computer Graphics (4)", 
+        "other_req": [
+            "recommended: MATH 308"
+        ]
+    }, 
+    "CSE 458": {
+        "choice_req": [
+            [
+                "CSE 457", 
+                "ART 380", 
+                "MUSIC 403"
+            ]
+        ], 
+        "description": "Introduction to basic principles of computer generated animation. Focus on the modeling and lighting of animated characters. Students from art, CSE, and music team up on projects to be built on commercially-available modeling and lighting packages.", 
+        "hard_req": [], 
+        "name": "Computer Animation (5)", 
+        "other_req": []
+    }, 
+    "CSE 459": {
+        "choice_req": [], 
+        "description": "Pre-production of collaboratively designed animated shorts. In-depth analysis of classical and computer generated works. Character design and pre-planning, model sheets, character rigging, storyreel and animatics, character motion, design for multiple characters, and principles of animation as applied to character motion and effects.", 
+        "hard_req": [
+            "CSE 458"
+        ], 
+        "name": "Pre-Production for Collaborative Animation (5)", 
+        "other_req": []
+    }, 
+    "CSE 460": {
+        "choice_req": [], 
+        "description": "Apply the knowledge gained in previous animation courses to produce a short animated film. Topics include scene planning, digital cinematography, creature and hard surface modeling, animatics and basics of character animation, and rendering techniques.", 
+        "hard_req": [
+            "CSE 458, CSE 459"
+        ], 
+        "name": "Animation Capstone (5)", 
+        "other_req": []
+    }, 
+    "CSE 461": {
+        "choice_req": [
+            [
+                "CSE 326", 
+                "CSE 332"
+            ], 
+            [
+                "CSE 303", 
+                "CSE 333"
+            ]
+        ], 
+        "description": "Computer network architectures, protocol layers, network programming. Transmission media, encoding systems, switching, multiple access arbitration. Network routing, congestion control, flow control. Transport protocols, real-time, multicast, network security.", 
+        "hard_req": [], 
+        "name": "Introduction to Computer-Communication Networks (4)", 
+        "other_req": []
+    }, 
+    "CSE 464": {
+        "choice_req": [], 
+        "description": "Students design individual animated works for professional quality demo reels. 2- and 3-D animatics, special effects design, advanced character animation techniques, 3-D paint techniques and integration, short design, sequence planning, non-photorealistic rendering options, interactive animation for pre-planning, and advanced production techniques and strategies.", 
+        "hard_req": [
+            "CSE 458"
+        ], 
+        "name": "Advanced Topics in Digital Animation (1-5, max. 10)", 
+        "other_req": []
+    }, 
+    "CSE 466": {
+        "choice_req": [
+            [
+                "CSE 352", 
+                "CSE 378"
+            ], 
+            [
+                "CSE 303", 
+                "CSE 333"
+            ]
+        ], 
+        "description": "Software issues in the design of embedded systems. Microcontroller architectures and peripherals, embedded operating systems and device drivers, compilers and debuggers, timer and interrupt systems, interfacing of devices, communications and networking. Emphasis on practical application of development platforms.", 
+        "hard_req": [], 
+        "name": "Software for Embedded Systems (4)", 
+        "other_req": []
+    }, 
+    "CSE 467": {
+        "choice_req": [
+            [
+                "CSE 352", 
+                "CSE 370"
+            ], 
+            [
+                "CSE 326", 
+                "CSE 332"
+            ]
+        ], 
+        "description": "Advanced techniques in the design of digital systems. Hardware description languages, combinational and sequential logic synthesis and optimization methods, partitioning, mapping to regular structures. Emphasis on reconfigurable logic as an implementation medium. Memory system design. Digital communication including serial/parallel and synchronous/asynchronous methods.", 
+        "hard_req": [], 
+        "name": "Advanced Digital Design (4)", 
+        "other_req": []
+    }, 
+    "CSE 471": {
+        "choice_req": [
+            [
+                "CSE 352", 
+                "CSE 378"
+            ]
+        ], 
+        "description": "CPU instruction addressing models, CPU structure and functions, computer arithmetic and logic unit, register transfer level design, hardware and microprogram control, memory hierarchy design and organization, I/O and system components interconnection. Laboratory project involves design and simulation of an instruction set processor.", 
+        "hard_req": [], 
+        "name": "Computer Design and Organization (4)", 
+        "other_req": []
+    }, 
+    "CSE 472": {
+        "choice_req": [
+            [
+                "LING 200", 
+                "LING 400"
+            ], 
+            [
+                "LING 461", 
+                "CSE 311", 
+                "CSE 321"
+            ]
+        ], 
+        "description": "Introduction to computer applications of linguistic theory, including syntactic processing, semantic and pragmatic interpretation, and natural language generation.", 
+        "hard_req": [], 
+        "name": "Introduction to Computational Linguistics (5) NW/VLPA", 
+        "other_req": []
+    }, 
+    "CSE 473": {
+        "choice_req": [
+            [
+                "STAT 390", 
+                "STAT 391"
+            ]
+        ], 
+        "description": "Principal ideas and developments in artificial intelligence: Problem solving and search, game playing, knowledge representation and reasoning, uncertainty, machine learning, natural language processing. Not open for credit to students who have completed CSE 415.", 
+        "hard_req": [
+            "CSE 326 or CSE 332"
+        ], 
+        "name": "Introduction to Artificial Intelligence (3)", 
+        "other_req": [
+            "recommended: CSE 312"
+        ]
+    }, 
+    "CSE 477": {
+        "choice_req": [], 
+        "description": "Capstone design experience. Prototype a substantial project mixing hardware, software, and communication components. Focuses on use of embedded processors and programmable logic in digital system design, case studies, and emerging components and platforms. Provides a complete experience in embedded system design and management.", 
+        "hard_req": [
+            "CSE 451", 
+            "CSE 466", 
+            "CSE 467"
+        ], 
+        "name": "Digital System Design (5)", 
+        "other_req": []
+    }, 
+    "CSE 481": {
+        "choice_req": [], 
+        "description": "Students work in teams to design and implement a software project involving multiple areas of the CSE curriculum. Emphasis is placed on the development process itself, rather than on the product.", 
+        "hard_req": [
+            "CSE 331 or CSE 341", 
+            "CSE 326 or CSE 332", 
+            "CSE 351 or CSE 378", 
+            "substantial programming experience such as CSE 451 or CSE 457"
+        ], 
+        "name": "Capstone Software Design (5, max. 15)", 
+        "other_req": []
+    }, 
+    "CSE 484": {
+        "choice_req": [
+            [
+                "CSE 326", 
+                "CSE 332"
+            ], 
+            [
+                "CSE 351", 
+                "CSE 378"
+            ]
+        ], 
+        "description": "Foundations of modern computer security, including software security, operating system security, network security, applied cryptography, human factors, authentication, anonymity, and web security.", 
+        "hard_req": [], 
+        "name": "Computer Security (4)", 
+        "other_req": []
+    }, 
+    "CSE 486": {
         "choice_req": [
             [
                 "MATH 136 or MATH 307", 
@@ -8,12 +618,12 @@
                 "AMATH 352"
             ]
         ], 
-        "description": "Studies mathematical modeling of transcription, translation, regulation, and metabolism in cell; computer-aided design methods for synthetic biology; implementation of information processing, Boolean logic and feedback control laws with genetic regulatory networks; modularity, impedance matching and isolation in biochemical circuits; and parameter estimation methods. ", 
+        "description": "Studies mathematical modeling of transcription, translation, regulation, and metabolism in cell; computer-aided design methods for synthetic biology; implementation of information processing, Boolean logic and feedback control laws with genetic regulatory networks; modularity, impedance matching and isolation in biochemical circuits; and parameter estimation methods.", 
         "hard_req": [], 
         "name": "Introduction to Synthetic Biology (3)", 
         "other_req": []
     }, 
-    "CHEM 145": {
+    "CSE 488": {
         "choice_req": [
             [
                 "BIOEN 423", 
@@ -26,447 +636,42 @@
                 "CHEM 145"
             ]
         ], 
-        "description": "Designs and builds transgenic bacterial using promoters and genes taken from a variety of organisms. Uses construction techniques including recombination, gene synthesis, and gene extraction. Evaluates designs using sequencing, fluorescence assays, enzyme activity assays, and single cell studies using time-lapse microscopy. ", 
+        "description": "Designs and builds transgenic bacterial using promoters and genes taken from a variety of organisms. Uses construction techniques including recombination, gene synthesis, and gene extraction. Evaluates designs using sequencing, fluorescence assays, enzyme activity assays, and single cell studies using time-lapse microscopy.", 
         "hard_req": [], 
         "name": "Laboratory Methods in Synthetic Biology (4)", 
         "other_req": []
     }, 
-    "CSE 120": {
-        "choice_req": [], 
-        "description": "Introduces fundamental concepts of computer science and computational thinking. Includes logical reasoning, problem solving, data representation, abstraction, the creation of digital artifacts such as web pages and programs, managing complexity, operation of computers and networks, effective web searching, ethical, legal and social aspects of information technology. May not be taken for credit if credit earned in CSE 100/INFO 100.", 
-        "hard_req": [], 
-        "name": "Computer Science Principles (5) NW, QSR", 
-        "other_req": []
-    }, 
-    "CSE 131": {
-        "choice_req": [], 
-        "description": "Covers the fundamentals of digital photography, including computational imaging; the elements of photographic composition and design; and the future of internet-enabled photography.", 
-        "hard_req": [], 
-        "name": "Science and Art of Digital Photography (4) VLPA", 
-        "other_req": []
-    }, 
-    "CSE 140": {
-        "choice_req": [], 
-        "description": "Introduction to computer programming. Assignments solve real data manipulation tasks from science, engineering, business, and the humanities, enabling students to solve such problems in their own discipline. Covers concepts of computational thinking and problem-solving, data analysis, the Python programming language, control and data abstraction, file processing, and data visualization.", 
-        "hard_req": [], 
-        "name": "Introduction to Data Programming (4) NW, QSR", 
-        "other_req": []
-    }, 
-    "CSE 142": {
-        "choice_req": [], 
-        "description": "Basic programming-in-the-small abilities and concepts including procedural programming (methods, parameters, return values), basic control structures (sequence, if/else, for loop, while loop), file processing, arrays and an introduction to defining objects. Offered: AWSpS.", 
-        "hard_req": [], 
-        "name": "Computer Programming I (4) NW, QSR", 
-        "other_req": []
-    }, 
-    "CSE 143": {
-        "choice_req": [
-            [
-                "minimum grade of 20 in either CSE 140", 
-                "CSE 142", 
-                "CSE 143"
-            ]
-        ], 
-        "description": "Covers languages, tools, and techniques for developing interactive and dynamic web pages. Topics include page styling, design, and layout; client and server side scripting; web security; and interacting with data sources such as databases. ", 
-        "hard_req": [], 
-        "name": "Web Programming (5) QSR", 
-        "other_req": []
-    }, 
-    "CSE 190": {
-        "choice_req": [], 
-        "description": "", 
-        "hard_req": [], 
-        "name": "Current Topics in Computer Science and Engineering (1-5, max. 15)", 
-        "other_req": []
-    }, 
-    "CSE 312": {
-        "choice_req": [
-            [
-                "CSE 326", 
-                "CSE 332"
-            ], 
-            [
-                "STAT 390", 
-                "STAT 391", 
-                "CSE 312"
-            ]
-        ], 
-        "description": "Methods for designing systems that learn from data and improve with experience. Supervised learning and predictive modeling: decision trees, rule induction, nearest neighbors, Bayesian methods, neural networks, support vector machines, and model ensembles. Unsupervised learning and clustering. ", 
-        "hard_req": [], 
-        "name": "Machine Learning (3)", 
-        "other_req": []
-    }, 
-    "CSE 321": {
-        "choice_req": [
-            [
-                "LING 200", 
-                "LING 400"
-            ], 
-            [
-                "LING 461", 
-                "CSE 311", 
-                "CSE 321"
-            ]
-        ], 
-        "description": "Introduction to computer applications of linguistic theory, including syntactic processing, semantic and pragmatic interpretation, and natural language generation. ", 
-        "hard_req": [], 
-        "name": "Introduction to Computational Linguistics (5) NW/VLPA", 
-        "other_req": []
-    }, 
-    "CSE 322": {
-        "choice_req": [
-            [
-                "CSE 312", 
-                "CSE 322"
-            ]
-        ], 
-        "description": "Models of computation, computable and noncomputable functions, space and time complexity, tractable and intractable functions. ", 
-        "hard_req": [], 
-        "name": "Introduction to Theory of Computation (3)", 
-        "other_req": []
-    }, 
-    "CSE 326": {
-        "choice_req": [
-            [
-                "CSE 303", 
-                "CSE 331"
-            ], 
-            [
-                "CSE 332", 
-                "CSE 326"
-            ]
-        ], 
-        "description": "Fundamentals of software engineering using a group project as the basic vehicle. Topics covered include the software crisis, managing complexity, requirements specification, architectural and detailed design, testing and analysis, software process, and tools and environments. ", 
-        "hard_req": [], 
-        "name": "Software Engineering (4)", 
-        "other_req": [
-            "recommended: either CSE 331 or project experience in a work setting"
-        ]
-    }, 
-    "CSE 331": {
-        "choice_req": [], 
-        "description": "Explores concepts and techniques for design and construction of reliable and maintainable software systems in modern high-level languages; program structure and design; program-correctness approaches, including testing; and event-driven programming (e.g., graphical user interface). Includes substantial project and software-team experience. ", 
-        "hard_req": [], 
-        "name": "Software Design and Implementation (4)", 
-        "other_req": [
-            "CSE 143"
-        ]
-    }, 
-    "CSE 332": {
-        "choice_req": [
-            [
-                "CSE 352", 
-                "CSE 370"
-            ], 
-            [
-                "CSE 326", 
-                "CSE 332"
-            ]
-        ], 
-        "description": "Advanced techniques in the design of digital systems. Hardware description languages, combinational and sequential logic synthesis and optimization methods, partitioning, mapping to regular structures. Emphasis on reconfigurable logic as an implementation medium. Memory system design. Digital communication including serial/parallel and synchronous/asynchronous methods. ", 
-        "hard_req": [], 
-        "name": "Advanced Digital Design (4)", 
-        "other_req": []
-    }, 
-    "CSE 332 and CSE 351": {
-        "choice_req": [
-            [
-                "CSE 326 and CSE 378", 
-                "CSE 332 and CSE 351"
-            ]
-        ], 
-        "description": "Fundamentals of compilers and interpreters; symbol tables; lexical analysis, syntax analysis, semantic analysis, code generation, and optimizations for general purpose programming languages. No credit to students who have taken CSE 413. ", 
-        "hard_req": [], 
-        "name": "Introduction to Compiler Construction (4)", 
-        "other_req": []
-    }, 
-    "CSE 333": {
-        "choice_req": [
-            [
-                "CSE 352", 
-                "CSE 378"
-            ], 
-            [
-                "CSE 303", 
-                "CSE 333"
-            ]
-        ], 
-        "description": "Software issues in the design of embedded systems. Microcontroller architectures and peripherals, embedded operating systems and device drivers, compilers and debuggers, timer and interrupt systems, interfacing of devices, communications and networking. Emphasis on practical application of development platforms. ", 
-        "hard_req": [], 
-        "name": "Software for Embedded Systems (4)", 
-        "other_req": []
-    }, 
-    "CSE 341": {
-        "choice_req": [], 
-        "description": "Basic concepts of programming languages, including abstraction mechanisms, types, and scoping. Detailed study of several different programming paradigms, such as functional, object-oriented, and logic programming. No credit if CSE 413 has been taken. ", 
-        "hard_req": [], 
-        "name": "Programming Languages (4)", 
-        "other_req": [
-            "CSE 143"
-        ]
-    }, 
-    "CSE 351": {
-        "choice_req": [], 
-        "description": "Examines key computational abstraction levels below modern high-level languages; number representation, assembly language, introduction to C, memory management, the operating-system process model, high-level machine architecture including the memory hierarchy, and how high-level languages are implemented. ", 
-        "hard_req": [], 
-        "name": "The Hardware/Software Interface (4)", 
-        "other_req": [
-            "CSE 143"
-        ]
-    }, 
-    "CSE 352": {
-        "choice_req": [], 
-        "description": "Covers digital circuit design, processor design, and systems integration and embedded-systems issues. Includes substantial hardware laboratory. ", 
-        "hard_req": [], 
-        "name": "Hardware Design and Implementation (4)", 
-        "other_req": [
-            "CSE 311", 
-            "CSE 351"
-        ]
-    }, 
-    "CSE 373": {
-        "choice_req": [], 
-        "description": "Fundamental algorithms and data structures for implementation. Techniques for solving problems by programming. Linked lists, stacks, queues, directed graphs. Trees: representations, traversals. Searching (hashing, binary search trees, multiway trees). Garbage collection, memory management. Internal and external sorting. Intended for non-majors. Not open for credit to students who have completed CSE 326 or CSE 332. ", 
-        "hard_req": [], 
-        "name": "Data Structures and Algorithms (3)", 
-        "other_req": [
-            "CSE 143"
-        ]
-    }, 
-    "CSE 374": {
-        "choice_req": [], 
-        "description": "Covers key software development concepts and tools not in introductory courses. Concepts of lower-level programming (C/C++) and explicit memory management; techniques and tools for individual and group software development; design, implementation, and testing strategies. Intended for non-majors. Cannot be taken for credit if credit received for CSE 303 or CSE 333. ", 
-        "hard_req": [], 
-        "name": "Intermediate Programming Concepts and Tools (3)", 
-        "other_req": [
-            "CSE 143"
-        ]
-    }, 
-    "CSE 378": {
-        "choice_req": [
-            [
-                "CSE 326", 
-                "CSE 332"
-            ], 
-            [
-                "CSE 351", 
-                "CSE 378"
-            ]
-        ], 
-        "description": "Foundations of modern computer security, including software security, operating system security, network security, applied cryptography, human factors, authentication, anonymity, and web security. ", 
-        "hard_req": [], 
-        "name": "Computer Security (4)", 
-        "other_req": []
-    }, 
-    "CSE 390": {
-        "choice_req": [], 
-        "description": "Covers topics of current interest in computer science and engineering.", 
-        "hard_req": [], 
-        "name": "Special Topics in Computer Science and Engineering (1-5, max. 10)", 
-        "other_req": []
-    }, 
-    "CSE 399": {
-        "choice_req": [], 
-        "description": "Upper-division computer science or computer engineering course, taken through an approved study abroad program, for which there is no direct University of Washington equivalent. Credit/no-credit only.", 
-        "hard_req": [], 
-        "name": "CSE Foreign Study (*)", 
-        "other_req": []
-    }, 
-    "CSE 410": {
-        "choice_req": [], 
-        "description": "Structure and components of hardware and software systems. Machine organization, including central processor and input-output architectures; assembly language programming; operating systems, including process, storage, and file management. Intended for non-majors. No credit to students who have completed CSE 351, CSE 378, or CSE 451. ", 
-        "hard_req": [], 
-        "name": "Computer Systems (3)", 
-        "other_req": [
-            "CSE 373"
-        ]
-    }, 
-    "CSE 413": {
-        "choice_req": [], 
-        "description": "Basic concepts and implementation strategies for modern functional and object-oriented programming languages such as Scheme and Java. Intended for non-majors. No credit to students who have completed CSE 341 or CSE 401. ", 
-        "hard_req": [], 
-        "name": "Programming Languages and Their Implementation (3)", 
-        "other_req": [
-            "CSE 373"
-        ]
-    }, 
-    "CSE 414": {
-        "choice_req": [], 
-        "description": "Introduces database management systems and writing applications that use such systems; data models, query languages, transactions, database tuning, data warehousing, and parallelism. Intended for non-majors. Not open for credit to students who have completed CSE 344. ", 
-        "hard_req": [
-            "minimum grade of 25 in CSE 143"
-        ], 
-        "name": "Introduction to Database Systems (4)", 
-        "other_req": []
-    }, 
-    "CSE 415": {
-        "choice_req": [], 
-        "description": "Principles and programming techniques of artificial intelligence: LISP, symbol manipulation, knowledge representation, logical and probabilistic reasoning, learning, language understanding, vision, expert systems, and social issues. Intended for non-majors. Not open for credit to students who have completed CSE 473. ", 
-        "hard_req": [], 
-        "name": "Introduction to Artificial Intelligence (3) NW", 
-        "other_req": [
-            "CSE 373"
-        ]
-    }, 
-    "CSE 417": {
-        "choice_req": [], 
-        "description": "Design and analysis of algorithms and data structures. Efficient algorithms for manipulating graphs and strings. Fast Fourier Transform. Models of computation, including Turing machines. Time and space complexity. NP-complete problems and undecidable problems. Intended for non-majors. ", 
-        "hard_req": [], 
-        "name": "Algorithms and Computational Complexity (3)", 
-        "other_req": [
-            "CSE 373"
-        ]
-    }, 
-    "CSE 427": {
-        "choice_req": [], 
-        "description": "Algorithmic and analytic techniques underlying analysis of large-scale biological data sets such as DNA, RNA, and protein sequences or structures, expression and proteomic profiling. Hands-on experience with databases, analysis tools, and genome markers. Applications such as sequence alignment, BLAST, phylogenetics, and Markov models. ", 
-        "hard_req": [
-            "either CSE 312"
-        ], 
-        "name": "Computational Biology (3)", 
-        "other_req": [
-            "CSE 332"
-        ]
-    }, 
-    "CSE 441": {
-        "choice_req": [], 
-        "description": "Human-Computer Interaction (HCI) theory and techniques. Advanced methods for designing, prototyping, and evaluating user interfaces to computing applications. Novel interface technology, advanced interface design methods, and prototyping tools. ", 
-        "hard_req": [], 
-        "name": "Advanced HCI: Advanced User Interface Design, Prototyping, and Evaluation (5)", 
-        "other_req": [
-            "CSE 440"
-        ]
-    }, 
-    "CSE 444": {
-        "choice_req": [], 
-        "description": "The rational data model and the SQL query language. Conceptual modeling: entity/relationships, normal forms. XML, XPath, and XQuery. Transactions: recovery and concurrency control. Implementation of a database system. A medium sized project using a rational database backend. ", 
-        "hard_req": [], 
-        "name": "Database Systems Intenals (4)", 
-        "other_req": [
-            "CSE 332", 
-            "CSE 344"
-        ]
-    }, 
-    "CSE 450": {
-        "choice_req": [], 
-        "description": "Open to all students who have an interest in digital animation. Reviews and analyzes films, animated feature films, and television commercials. Emphasizes the technical and aesthetic basics of animation production in industry studio environments.", 
-        "hard_req": [], 
-        "name": "Animation Production Seminar (1)", 
-        "other_req": []
-    }, 
-    "CSE 456": {
-        "choice_req": [], 
-        "description": "Animation principles and production for story development and design. Design, development, and production of several storyreels, which are a tool for the pre-production of animated features and shorts. Student use authoring tools to present finished work.", 
-        "hard_req": [], 
-        "name": "Story Design for Computer Animation (4)", 
-        "other_req": []
-    }, 
-    "CSE 457": {
-        "choice_req": [
-            [
-                "CSE 331", 
-                "CSE 341"
-            ], 
-            [
-                "CSE 326", 
-                "CSE 332"
-            ], 
-            [
-                "CSE 351", 
-                "CSE 378"
-            ], 
-            [
-                "substantial programming experience such as CSE 451", 
-                "CSE 457"
-            ]
-        ], 
-        "description": "Students work in teams to design and implement a software project involving multiple areas of the CSE curriculum. Emphasis is placed on the development process itself, rather than on the product. ", 
-        "hard_req": [], 
-        "name": "Capstone Software Design (5, max. 15)", 
-        "other_req": []
-    }, 
-    "CSE 459": {
-        "choice_req": [], 
-        "description": "Pre-production of collaboratively designed animated shorts. In-depth analysis of classical and computer generated works. Character design and pre-planning, model sheets, character rigging, storyreel and animatics, character motion, design for multiple characters, and principles of animation as applied to character motion and effects. ", 
-        "hard_req": [], 
-        "name": "Pre-Production for Collaborative Animation (5)", 
-        "other_req": [
-            "CSE 458"
-        ]
-    }, 
-    "CSE 460": {
-        "choice_req": [], 
-        "description": "Apply the knowledge gained in previous animation courses to produce a short animated film. Topics include scene planning, digital cinematography, creature and hard surface modeling, animatics and basics of character animation, and rendering techniques. ", 
-        "hard_req": [
-            "CSE 458, CSE 459"
-        ], 
-        "name": "Animation Capstone (5)", 
-        "other_req": []
-    }, 
-    "CSE 461": {
-        "choice_req": [
-            [
-                "CSE 444", 
-                "CSE 451", 
-                "CSE 461"
-            ]
-        ], 
-        "description": "Covers abstractions and implementation techniques in the construction of distributed systems, including cloud computing, distributed storage systems, and distributed caches. ", 
-        "hard_req": [], 
-        "name": "Introduction to Distributed Systems (4)", 
-        "other_req": []
-    }, 
-    "CSE 464": {
-        "choice_req": [], 
-        "description": "Students design individual animated works for professional quality demo reels. 2- and 3-D animatics, special effects design, advanced character animation techniques, 3-D paint techniques and integration, short design, sequence planning, non-photorealistic rendering options, interactive animation for pre-planning, and advanced production techniques and strategies. ", 
-        "hard_req": [], 
-        "name": "Advanced Topics in Digital Animation (1-5, max. 10)", 
-        "other_req": [
-            "CSE 458"
-        ]
-    }, 
-    "CSE 477": {
-        "choice_req": [], 
-        "description": "Capstone design experience. Prototype a substantial project mixing hardware, software, and communication components. Focuses on use of embedded processors and programmable logic in digital system design, case studies, and emerging components and platforms. Provides a complete experience in embedded system design and management. ", 
-        "hard_req": [], 
-        "name": "Digital System Design (5)", 
-        "other_req": [
-            "CSE 451", 
-            "CSE 466", 
-            "CSE 467"
-        ]
-    }, 
     "CSE 490": {
         "choice_req": [], 
-        "description": "Lectures, discussions, and possibly labs on topics of current interest in computer science and engineering not covered by other CSE undergraduate courses.", 
+        "description": "Lectures, discussions, and possibly labs on topics of current interest in computer science and engineering not covered by other CSE undergraduate courses", 
         "hard_req": [], 
         "name": "Special Topics in Computer Science and Engineering (1-5, max. 15)", 
         "other_req": []
     }, 
     "CSE 497": {
         "choice_req": [], 
-        "description": "Students prepare and give a public talk on their faculty-sponsored research projects.", 
+        "description": "Students prepare and give a public talk on their faculty-sponsored research projects", 
         "hard_req": [], 
         "name": "Undergraduate Research Seminar (1)", 
         "other_req": []
     }, 
     "CSE 498": {
         "choice_req": [], 
-        "description": "A report (and perhaps demonstration) describing a development, survey, or small research project in computer science or an application to another field. Objectives: (1) integrating material from several courses, (2) introducing the professional literature, (3) gaining experience in writing a technical document, and (4) showing evidence of independent work. Work normally extends over more than one quarter, for a maximum of 6 credits for CSE 498; 9 credits are required for CSE 498H.", 
+        "description": "A report (and perhaps demonstration) describing a development, survey, or small research project in computer science or an application to another field. Objectives: (1) integrating material from several courses, (2) introducing the professional literature, (3) gaining experience in writing a technical document, and (4) showing evidence of independent work. Work normally extends over more than one quarter, for a maximum of 6 credits for CSE 498; 9 credits are required for CSE 498H", 
         "hard_req": [], 
         "name": "Senior Project ([1-9]-, max. 9)", 
         "other_req": []
     }, 
     "CSE 499": {
         "choice_req": [], 
-        "description": "Available in special situations for advanced computer science majors to do reading and research in field, subject to approval of undergraduate adviser and CSE faculty member. Free elective, but does not replace core course or computer science elective. Credit/no-credit only.", 
+        "description": "Available in special situations for advanced computer science majors to do reading and research in field, subject to approval of undergraduate adviser and CSE faculty member. Free elective, but does not replace core course or computer science elective. Credit/no-credit only", 
         "hard_req": [], 
         "name": "Reading and Research (1-24, max. 24)", 
         "other_req": []
     }, 
     "CSE 501": {
         "choice_req": [], 
-        "description": "Design and implementation of compilers and run-time systems for imperative, object-oriented, and functional languages. Intra- and interprocedural analyses and optimizations. ", 
+        "description": "Design and implementation of compilers and run-time systems for imperative, object-oriented, and functional languages. Intra- and interprocedural analyses and optimizations.", 
         "hard_req": [
             "CSE major and CSE 341"
         ], 
@@ -475,9 +680,27 @@
             "recommended: CSE 401"
         ]
     }, 
+    "CSE 503": {
+        "choice_req": [], 
+        "description": "Specification, implementation, and testing of large, multiperson, software systems. Topics include abstraction, information hiding, software development environments, and formal specifications.", 
+        "hard_req": [
+            "CSE major and CSE 322, CSE 326, and CSE 378 or equivalents"
+        ], 
+        "name": "Software Engineering (4)", 
+        "other_req": []
+    }, 
+    "CSE 504": {
+        "choice_req": [], 
+        "description": "Topics vary but may include software design and evolution, formal methods, requirements specifications, software and system safety, reverse engineering, real-time software, metrics and measurement, programming environments, and verification and validation.", 
+        "hard_req": [], 
+        "name": "Advanced Topics in Software Engineering (4)", 
+        "other_req": [
+            "CSE major or permission of instructor"
+        ]
+    }, 
     "CSE 505": {
         "choice_req": [], 
-        "description": "Design and formal semantics of modern programming languages, includes functional and object-oriented languages. ", 
+        "description": "Design and formal semantics of modern programming languages, includes functional and object-oriented languages.", 
         "hard_req": [
             "CSE major and CSE 341"
         ], 
@@ -486,44 +709,62 @@
     }, 
     "CSE 506": {
         "choice_req": [], 
-        "description": "May include functional, object-oriented, parallel, and logic programming languages; semantics for languages of these kinds; type declaration, inference, and checking (including polymorphic types); implementation issues, such as compilation, lazy evaluation, combinators, parallelism, various optimization techniques. Implementation project required. ", 
-        "hard_req": [
-            "CSE major, CSE 501 which may be taken concurrently, and CSE 505"
-        ], 
+        "description": "May include functional, object-oriented, parallel, and logic programming languages; semantics for languages of these kinds; type declaration, inference, and checking (including polymorphic types); implementation issues, such as compilation, lazy evaluation, combinators, parallelism, various optimization techniques. Implementation project required.", 
+        "hard_req": [], 
         "name": "Advanced Topics in Programming Languages (4)", 
-        "other_req": []
+        "other_req": [
+            "CSE major, CSE 501 which may be taken concurrently, and CSE 505"
+        ]
     }, 
     "CSE 510": {
         "choice_req": [], 
-        "description": "Content varies, including interface issues for networks, embedded systems, education applications, safety and critical systems, graphics and virtual reality, databases, and computer-supported cooperative work.", 
+        "description": "Content varies, including interface issues for networks, embedded systems, education applications, safety and critical systems, graphics and virtual reality, databases, and computer-supported cooperative work", 
         "hard_req": [], 
         "name": "Advanced Topics in Human-Computer Interaction (4)", 
         "other_req": []
     }, 
+    "CSE 515": {
+        "choice_req": [], 
+        "description": "Introduction to the probabilistic and statistical techniques used in modern computer systems. Graphical models, probabilistic inference, statistical learning, sequential models, decision theory.", 
+        "hard_req": [], 
+        "name": "Statistical Methods in Computer Science (4)", 
+        "other_req": [
+            "either STAT 341 or STAT 391, and graduate standing in computer science, or permission of instructor"
+        ]
+    }, 
     "CSE 517": {
         "choice_req": [], 
-        "description": "Overview of modern approaches for natural language processing. Topics include language models, text, classification, tagging, parsing, machine translation, semantic, and discourse analysis.", 
+        "description": "Overview of modern approaches for natural language processing. Topics include language models, text, classification, tagging, parsing, machine translation, semantic, and discourse analysis", 
         "hard_req": [], 
         "name": "Natural Language Processing (4)", 
         "other_req": []
     }, 
     "CSE 519": {
         "choice_req": [], 
-        "description": "Weekly presentations on current research activities by members of the department. Only computer science graduate students may register, although others are encouraged to attend. Credit/no-credit only.", 
+        "description": "Weekly presentations on current research activities by members of the department. Only computer science graduate students may register, although others are encouraged to attend. Credit/no-credit only", 
         "hard_req": [], 
         "name": "Current Research in Computer Science (1, max. 18)", 
         "other_req": []
     }, 
     "CSE 520": {
         "choice_req": [], 
-        "description": "Weekly public presentations on topics of current interest by visiting computer scientists. Credit/no-credit only.", 
+        "description": "Weekly public presentations on topics of current interest by visiting computer scientists. Credit/no-credit only", 
         "hard_req": [], 
         "name": "Computer Science Colloquium (1, max. 18)", 
         "other_req": []
     }, 
+    "CSE 521": {
+        "choice_req": [], 
+        "description": "Principles of design of efficient algorithms: recursion, divide and conquer, balancing, dynamic programming, greedy method, network flow, linear programming. Correctness and analysis of algorithms. NP-completeness.", 
+        "hard_req": [
+            "CSE major and CSE 326 or equivalent CSE majors only"
+        ], 
+        "name": "Design and Analysis of Algorithms I (4)", 
+        "other_req": []
+    }, 
     "CSE 522": {
         "choice_req": [], 
-        "description": "Analysis of algorithms more sophisticated than those treated in CSE 521. Content varies and may include such topics as algebraic algorithms, combinational algorithms, techniques for proving lower bounds on complexity, and algorithms for special computing devices such as networks or formulas. ", 
+        "description": "Analysis of algorithms more sophisticated than those treated in CSE 521. Content varies and may include such topics as algebraic algorithms, combinational algorithms, techniques for proving lower bounds on complexity, and algorithms for special computing devices such as networks or formulas.", 
         "hard_req": [
             "CSE major and CSE 521"
         ], 
@@ -532,7 +773,7 @@
     }, 
     "CSE 523": {
         "choice_req": [], 
-        "description": "Algorithms for discrete computational geometry. Geometric computation, range searching, convex hulls, proximity, Vornoi diagrams, intersection. Application areas include VLSI design and computer graphics. ", 
+        "description": "Algorithms for discrete computational geometry. Geometric computation, range searching, convex hulls, proximity, Vornoi diagrams, intersection. Application areas include VLSI design and computer graphics.", 
         "hard_req": [
             "CSE major and CSE 521"
         ], 
@@ -543,16 +784,65 @@
     }, 
     "CSE 524": {
         "choice_req": [], 
-        "description": "Design and analysis of parallel algorithms: fundamental parallel algorithms for sorting, arithmetic, matrix and graph problems, and additional selected topics. Emphasis on general techniques and approaches used for developing fast and efficient parallel algorithms and on limitations to their efficacy. ", 
+        "description": "Design and analysis of parallel algorithms: fundamental parallel algorithms for sorting, arithmetic, matrix and graph problems, and additional selected topics. Emphasis on general techniques and approaches used for developing fast and efficient parallel algorithms and on limitations to their efficacy.", 
         "hard_req": [
             "CSE major and CSE 521"
         ], 
         "name": "Parallel Algorithms (4)", 
         "other_req": []
     }, 
+    "CSE 525": {
+        "choice_req": [], 
+        "description": "Examines algorithmic techniques: random selection, random sampling, backwards analysis, algebraic methods, Monte Carlo methods, and randomized rounding; random graphs; the probabilistic method; Markov chains and random walks; and analysis tools: random variables, moments and deviations, Chernoff bounds, martingales, and balls in bins.", 
+        "hard_req": [
+            "CSE 521 or equivalent"
+        ], 
+        "name": "Randomized Algorithms and Probabilistic Analysis (4)", 
+        "other_req": [
+            "CSE majors only"
+        ]
+    }, 
+    "CSE 527": {
+        "choice_req": [], 
+        "description": "Introduces computational methods for understanding biological systems at the molecular level. Problem areas such as mapping and sequencing, sequence analysis, structure prediction, phylogenic inference, regulatory analysis. Techniques such as dynamic programming, Markov models, expectation-maximization, local search.", 
+        "hard_req": [], 
+        "name": "Computational Biology (4)", 
+        "other_req": [
+            "graduate standing in biological, computer, mathematical or statistical science, or permission of instructor"
+        ]
+    }, 
+    "CSE 528": {
+        "choice_req": [], 
+        "description": "Introduction to computational methods for understanding nervous systems and the principles governing their operation. Topics include representation of information by spiking neurons, information processing in neural circuits, and algorithms for adaptation and learning.", 
+        "hard_req": [], 
+        "name": "Computational Neuroscience (3)", 
+        "other_req": [
+            "elementary calculus, linear algebra, and statistics, or permission of instructor"
+        ]
+    }, 
+    "CSE 529": {
+        "choice_req": [], 
+        "description": "Systematic overview of sensorimotor function on multiple levels of analysis, with emphasis on the phenomenology amenable to computational modeling. Topics include musculoskeletal mechanics, neural networks, optimal control and Bayesian inference, learning and adaptation, internal models, and neural coding and decoding.", 
+        "hard_req": [], 
+        "name": "Neural Control of Movement: A Computational Perspective (3)", 
+        "other_req": [
+            "vector calculus, linear algebra, MATLAB, or permission of instructor"
+        ]
+    }, 
+    "CSE 531": {
+        "choice_req": [], 
+        "description": "Deterministic and nondeterministic time and space complexity, complexity classes, and complete problems. Time and space hierarchies. Alternation and the polynomial-time hierarchy. Circuit complexity. Probabilistic computation. Exponential complexity lower bounds. Interactive proofs.", 
+        "hard_req": [
+            "CSE 322 or equivalent"
+        ], 
+        "name": "Computational Complexity I (4)", 
+        "other_req": [
+            "CSE majors only"
+        ]
+    }, 
     "CSE 532": {
         "choice_req": [], 
-        "description": "Advanced computational complexity including several of the following: circuit complexity lower bounds, #p and counting classes, probabilistically-checkable proofs, de-randomization, logical characteristics of complexity, communication complexity, time-space tradeoffs, complexity of data structures. ", 
+        "description": "Advanced computational complexity including several of the following: circuit complexity lower bounds, #p and counting classes, probabilistically-checkable proofs, de-randomization, logical characteristics of complexity, communication complexity, time-space tradeoffs, complexity of data structures.", 
         "hard_req": [], 
         "name": "Computational Complexity II (4)", 
         "other_req": [
@@ -562,7 +852,7 @@
     }, 
     "CSE 533": {
         "choice_req": [], 
-        "description": "An in-depth study of advanced topics in computational complexity. ", 
+        "description": "An in-depth study of advanced topics in computational complexity.", 
         "hard_req": [], 
         "name": "Advanced Topics in Complexity Theory (4)", 
         "other_req": [
@@ -571,7 +861,7 @@
     }, 
     "CSE 536": {
         "choice_req": [], 
-        "description": "Formal approaches to distributed computing problems. Topics vary, but typically include models of distributed computing, agreement problems, impossibility results, mutual exclusion protocols, concurrent reading while writing protocols, knowledge analysis of protocols, and distributed algorithms. ", 
+        "description": "Formal approaches to distributed computing problems. Topics vary, but typically include models of distributed computing, agreement problems, impossibility results, mutual exclusion protocols, concurrent reading while writing protocols, knowledge analysis of protocols, and distributed algorithms.", 
         "hard_req": [], 
         "name": "Theory of Distributed Computing (4)", 
         "other_req": [
@@ -580,7 +870,7 @@
     }, 
     "CSE 543": {
         "choice_req": [], 
-        "description": "Emphasizes the use of analytic models as tools for evaluating the performance of centralized, distributed, and parallel computer systems. ", 
+        "description": "Emphasizes the use of analytic models as tools for evaluating the performance of centralized, distributed, and parallel computer systems.", 
         "hard_req": [
             "CSE major and CSE 451"
         ], 
@@ -589,44 +879,62 @@
     }, 
     "CSE 544": {
         "choice_req": [], 
-        "description": "Data models and query languages (SQL, datalog, OQL). Relational databases, enforcement of integrity constraints. Object-oriented databases and object-relational databases. Principles of data storage and indexing. Query-execution methods and query optimization algorithms. Static analysis of queries and rewriting of queries using views. Data integration. Data mining. Principles of transaction processing.", 
+        "description": "Data models and query languages (SQL, datalog, OQL). Relational databases, enforcement of integrity constraints. Object-oriented databases and object-relational databases. Principles of data storage and indexing. Query-execution methods and query optimization algorithms. Static analysis of queries and rewriting of queries using views. Data integration. Data mining. Principles of transaction processing", 
         "hard_req": [], 
         "name": "Principles of Database Systems (4)", 
         "other_req": []
     }, 
     "CSE 546": {
+        "choice_req": [], 
+        "description": "Explores methods for designing systems that learn from data and improve with experience. Supervised learning and predictive modeling; decision trees, rule induction, nearest neighbors, Bayesian methods, neural networks, support vector machines, and model ensembles. Unsupervised learning and clustering.", 
+        "hard_req": [], 
+        "name": "Machine Learning (4)", 
+        "other_req": [
+            "either STAT 341, STAT 391, or equivalent, or permission of instructor"
+        ]
+    }, 
+    "CSE 547": {
         "choice_req": [
             [
                 "STAT 535", 
                 "CSE 546"
             ]
         ], 
-        "description": "Machine Learning and statistical techniques for analyzing datasets of massive size and dimensionality. Representations include regularized linear models, graphical models, matrix factorization, sparsity, clustering, and latent factor models. Algorithms include sketching, random projections, hashing, fast nearest-neighbors, large-scale online learning, and parallel (Map-reduce, GraphLab). ", 
+        "description": "Machine Learning and statistical techniques for analyzing datasets of massive size and dimensionality. Representations include regularized linear models, graphical models, matrix factorization, sparsity, clustering, and latent factor models. Algorithms include sketching, random projections, hashing, fast nearest-neighbors, large-scale online learning, and parallel (Map-reduce, GraphLab).", 
         "hard_req": [], 
         "name": "Machine Learning for Big Data (4)", 
         "other_req": []
     }, 
     "CSE 548": {
         "choice_req": [], 
-        "description": "Notations for computer systems. Processor design (single chip, look-ahead, pipelined, data flow). Memory hierarchy organization and management (virtual memory and caches). Microprogramming. I/O processing. Multiprocessors (SIMD and MIMD). ", 
+        "description": "Notations for computer systems. Processor design (single chip, look-ahead, pipelined, data flow). Memory hierarchy organization and management (virtual memory and caches). Microprogramming. I/O processing. Multiprocessors (SIMD and MIMD).", 
         "hard_req": [
             "CSE major and CSE 451"
         ], 
         "name": "Computer Systems Architecture (4)", 
         "other_req": []
     }, 
+    "CSE 549": {
+        "choice_req": [], 
+        "description": "Algorithm design, software techniques, computer organizations for high-performance computing systems. Selected topics from: VLSI complexity for parallel algorithms, compiling techniques for parallel and vector machines, large MIMD machines, interconnection networks, reconfigurable systems, memory hierarchies in multiprocessors, algorithmically specialized processors, data flow architectures.", 
+        "hard_req": [], 
+        "name": "High-Performance Computer Architectures (4)", 
+        "other_req": [
+            "CSE major and CSE 548 or permission of instructor"
+        ]
+    }, 
     "CSE 550": {
         "choice_req": [], 
-        "description": "Explores computer system design, implementation, and evaluation. Covers principles, techniques, and examples related to the construction of computer systems, including concepts that span network systems, operating systems, web servers, parallel computing, and databases. ", 
-        "hard_req": [], 
-        "name": "Computer Systems (4)", 
-        "other_req": [
+        "description": "Explores computer system design, implementation, and evaluation. Covers principles, techniques, and examples related to the construction of computer systems, including concepts that span network systems, operating systems, web servers, parallel computing, and databases.", 
+        "hard_req": [
             "CSE 451"
-        ]
+        ], 
+        "name": "Computer Systems (4)", 
+        "other_req": []
     }, 
     "CSE 551": {
         "choice_req": [], 
-        "description": "Operating system design and construction techniques. Concurrent programming, operating system kernels, correctness, deadlock, protection, transaction processing, design methodologies, comparative structure of different kinds of operating systems, and other topics. ", 
+        "description": "Operating system design and construction techniques. Concurrent programming, operating system kernels, correctness, deadlock, protection, transaction processing, design methodologies, comparative structure of different kinds of operating systems, and other topics.", 
         "hard_req": [
             "CSE major and CSE 451"
         ], 
@@ -635,7 +943,7 @@
     }, 
     "CSE 552": {
         "choice_req": [], 
-        "description": "Principles, techniques, and examples related to the design, implementation, and analysis of distributed and parallel computer systems. ", 
+        "description": "Principles, techniques, and examples related to the design, implementation, and analysis of distributed and parallel computer systems.", 
         "hard_req": [
             "CSE major and CSE 551"
         ], 
@@ -644,7 +952,7 @@
     }, 
     "CSE 553": {
         "choice_req": [], 
-        "description": "Design and construction of software for real-time computer systems. Software architectures. Requirements and specification methods. Scheduling algorithms and timing analysis. Real-time operating systems. Real-time programming languages. Selected case studies. ", 
+        "description": "Design and construction of software for real-time computer systems. Software architectures. Requirements and specification methods. Scheduling algorithms and timing analysis. Real-time operating systems. Real-time programming languages. Selected case studies.", 
         "hard_req": [
             "CSE major and CSE 451"
         ], 
@@ -653,41 +961,107 @@
     }, 
     "CSE 557": {
         "choice_req": [], 
-        "description": "Introduction to image synthesis and computer modeling, emphasizing the underlying theory required for undertaking computer graphics research. Topics include color theory, image processing, affine and projective geometry, hidden-surface determination, photorealistic image synthesis, advanced curve and surface design, dynamics, realistic character animation. ", 
+        "description": "Introduction to image synthesis and computer modeling, emphasizing the underlying theory required for undertaking computer graphics research. Topics include color theory, image processing, affine and projective geometry, hidden-surface determination, photorealistic image synthesis, advanced curve and surface design, dynamics, realistic character animation.", 
         "hard_req": [], 
         "name": "Computer Graphics (4)", 
         "other_req": [
             "CSE major, solid knowledge of linear algebra"
         ]
     }, 
+    "CSE 558": {
+        "choice_req": [], 
+        "description": "Advanced topics in computer graphics not treated in CSE 557. Topics vary from year to year but typically include advanced aspects of image synthesis, animation, and 3D photography.", 
+        "hard_req": [], 
+        "name": "Special Topics in Computer Graphics (4)", 
+        "other_req": [
+            "CSE major and CSE 557 or permission of instructor"
+        ]
+    }, 
+    "CSE 561": {
+        "choice_req": [], 
+        "description": "Fundamentals of data transmission: coding, message formats, and protocols. Organization of computer networks. Examples of network implementations.", 
+        "hard_req": [
+            "CSE or E E major and CSE 451 or equivalent"
+        ], 
+        "name": "Computer Communication and Networks (4)", 
+        "other_req": []
+    }, 
     "CSE 564": {
         "choice_req": [], 
-        "description": "Examines the fundamentals of computer security including: human factors; attack detection, measurements, and models; cryptography and communications security; system design and implementation; and side channels.", 
+        "description": "Examines the fundamentals of computer security including: human factors; attack detection, measurements, and models; cryptography and communications security; system design and implementation; and side channels", 
         "hard_req": [], 
         "name": "Computer Security and Privacy (4)", 
         "other_req": []
     }, 
     "CSE 567": {
         "choice_req": [], 
-        "description": "Principles of logic design, combinational and sequential circuits, minimization techniques, structured design methods, CMOS technology, complementary and ratioed gates, delay estimation and performance analysis, arithmetic circuits, memories, clocking methodologies, synthesis and simulation tools, VLSI processor architecture. ", 
+        "description": "Principles of logic design, combinational and sequential circuits, minimization techniques, structured design methods, CMOS technology, complementary and ratioed gates, delay estimation and performance analysis, arithmetic circuits, memories, clocking methodologies, synthesis and simulation tools, VLSI processor architecture.", 
         "hard_req": [], 
         "name": "Principles of Digital Systems Design (4)", 
         "other_req": [
             "CSE major and basic knowledge of logic design"
         ]
     }, 
+    "CSE 568": {
+        "choice_req": [], 
+        "description": "Introduction to CMOS technology and circuit design; combinational logic-design alternatives; register-design and system-clocking methodologies; datapath and subsystem design; VLSI system-design methodologies; CAD tools for synthesis, layout, simulation, and validation; design of a complex VLSI chip.", 
+        "hard_req": [], 
+        "name": "Introduction to VLSI Systems (4)", 
+        "other_req": [
+            "CSE 567 or permission of instructor CSE majors only"
+        ]
+    }, 
+    "CSE 571": {
+        "choice_req": [], 
+        "description": "Overview of mobile robot control and sensing. Behavior-based control, world modeling, localization, navigation, and planning Probabilistic sensor interpretation, Bayers filters, particle filters. Projects: Program real robots to perform navigation tasks.", 
+        "hard_req": [], 
+        "name": "AI-based Mobile Robotics (4)", 
+        "other_req": [
+            "CSE major and CSE 473, or permission of instructor"
+        ]
+    }, 
+    "CSE 573": {
+        "choice_req": [], 
+        "description": "Intensive introduction to artificial intelligence: Problem solving and search, game playing, knowledge representation and reasoning, uncertainty, machine learning, natural language processing.", 
+        "hard_req": [
+            "CSE 421 or equivalent"
+        ], 
+        "name": "Artificial Intelligence I (4)", 
+        "other_req": [
+            "exposure to logic, probability, and statistics", 
+            "CSE major"
+        ]
+    }, 
     "CSE 574": {
         "choice_req": [], 
-        "description": "Advanced topics in artificial intelligence. Subjects include planning, natural language understanding, qualitative physics, machine learning, and formal models of time and action. Students are required to do projects. ", 
+        "description": "Advanced topics in artificial intelligence. Subjects include planning, natural language understanding, qualitative physics, machine learning, and formal models of time and action. Students are required to do projects.", 
         "hard_req": [
             "CSE major and CSE 573"
         ], 
         "name": "Artificial Intelligence II (4)", 
         "other_req": []
     }, 
+    "CSE 576": {
+        "choice_req": [], 
+        "description": "Overview of computer vision, emphasizing the middle ground between image processing and artificial intelligence. Image formation, preattentive image processing, boundary and region representations, and case studies of vision architectures.", 
+        "hard_req": [], 
+        "name": "Computer Vision (3)", 
+        "other_req": [
+            "Solid knowledge of linear algebra, good programming skills, CSE or E E major or permission of instructor"
+        ]
+    }, 
+    "CSE 577": {
+        "choice_req": [], 
+        "description": "Topics vary and may include vision for graphics, probabilistic vision and learning, medical imaging, content-based image and video retrieval, robot vision, or 3D object recognition.", 
+        "hard_req": [], 
+        "name": "Special Topics in Computer Vision (3)", 
+        "other_req": [
+            "CSE 576/E E 576 or permission of instructor"
+        ]
+    }, 
     "CSE 579": {
         "choice_req": [], 
-        "description": "Design or near-optimal controllers for complex dynamical systems, using analytical techniques, machine learning, and optimization. Topics from deterministic and stochastic optimal control, reinforcement learning and dynamic programming, numerical optimization in the context of control, and robotics. ", 
+        "description": "Design or near-optimal controllers for complex dynamical systems, using analytical techniques, machine learning, and optimization. Topics from deterministic and stochastic optimal control, reinforcement learning and dynamic programming, numerical optimization in the context of control, and robotics.", 
         "hard_req": [], 
         "name": "Intelligent Control through Learning and Optimization (3)", 
         "other_req": [
@@ -698,7 +1072,7 @@
     }, 
     "CSE 581": {
         "choice_req": [], 
-        "description": "Parallel architectures, algorithms, and languages for image processing. Cellular array, pipelined and pyramid machines, instruction sets, and design issues. Parallel implementations of filtering, edge detection, segmentation, shape, stereo, motion, relaxation algorithms, multiresolution methods, and iconic-to-symbolic transforms. Students write and debug programs for parallel computers. ", 
+        "description": "Parallel architectures, algorithms, and languages for image processing. Cellular array, pipelined and pyramid machines, instruction sets, and design issues. Parallel implementations of filtering, edge detection, segmentation, shape, stereo, motion, relaxation algorithms, multiresolution methods, and iconic-to-symbolic transforms. Students write and debug programs for parallel computers.", 
         "hard_req": [], 
         "name": "Parallel Computation in Image Processing (4)", 
         "other_req": [
@@ -708,19 +1082,33 @@
     "CSE 586": {
         "choice_req": [
             [
+                "MATH 136 or MATH 307", 
+                "AMATH 351", 
+                "or CSE 321 and MATH 308", 
+                "AMATH 352"
+            ]
+        ], 
+        "description": "Studies mathematical modeling of transcription, translation, regulation, and metabolism in cell; computer-aided design methods for synthetic biology; implementation of information processing, Boolean logic and feedback control laws with genetic regulatory networks; modularity, impedance matching and isolation in biochemical circuits; and parameter estimation methods.", 
+        "hard_req": [], 
+        "name": "Introduction to Synthetic Biology (3)", 
+        "other_req": []
+    }, 
+    "CSE 587": {
+        "choice_req": [
+            [
                 "BIOEN 523", 
                 "E E 523", 
                 "CSE 586"
             ]
         ], 
-        "description": "Covers advanced concepts in system and synthetic biology. Includes kinetics, modeling, stoichiometry, control theory, metabolic systems, signaling, and motifs. All topics are set against problems in synthetic biology. ", 
+        "description": "Covers advanced concepts in system and synthetic biology. Includes kinetics, modeling, stoichiometry, control theory, metabolic systems, signaling, and motifs. All topics are set against problems in synthetic biology.", 
         "hard_req": [], 
         "name": "Advanced Systems and Synthetic Biology (3)", 
         "other_req": []
     }, 
     "CSE 590": {
         "choice_req": [], 
-        "description": "Several offerings each quarter, on topics of current interest. ", 
+        "description": "Several offerings each quarter, on topics of current interest.", 
         "hard_req": [], 
         "name": "Research Seminar (*, max. 30)", 
         "other_req": [
@@ -729,14 +1117,14 @@
     }, 
     "CSE 591": {
         "choice_req": [], 
-        "description": "Focuses on specialized topics and research activities in computer science. Credit/no-credit only.", 
+        "description": "Focuses on specialized topics and research activities in computer science. Credit/no-credit only", 
         "hard_req": [], 
         "name": "Group Projects in Computer Science (1-3, max. 25)", 
         "other_req": []
     }, 
     "CSE 597": {
         "choice_req": [], 
-        "description": "Broad introduction to computer system performance evaluation techniques and their application. Includes measurement/benchmarking, stochastic and trace driven simulation, stochastic queuing networks, and timed Petri nets. Applications of the techniques are studied using case study papers. ", 
+        "description": "Broad introduction to computer system performance evaluation techniques and their application. Includes measurement/benchmarking, stochastic and trace driven simulation, stochastic queuing networks, and timed Petri nets. Applications of the techniques are studied using case study papers.", 
         "hard_req": [
             "CSE majors only Not open for credit to students who have completed CSE 543"
         ], 
@@ -745,140 +1133,30 @@
     }, 
     "CSE 599": {
         "choice_req": [], 
-        "description": "Studies of emerging areas and specialized topics in computer science.", 
+        "description": "Studies of emerging areas and specialized topics in computer science", 
         "hard_req": [], 
         "name": "Special Topics in Computer Science (1-5, max. 30)", 
         "other_req": []
     }, 
     "CSE 600": {
         "choice_req": [], 
-        "description": "Credit/no-credit only.", 
+        "description": "Credit/no-credit only", 
         "hard_req": [], 
         "name": "Independent Study or Research (*-)", 
         "other_req": []
     }, 
     "CSE 700": {
         "choice_req": [], 
-        "description": "Credit/no-credit only.", 
+        "description": "Credit/no-credit only", 
         "hard_req": [], 
         "name": "Master's Thesis (*-)", 
         "other_req": []
     }, 
     "CSE 800": {
         "choice_req": [], 
-        "description": "Credit/no-credit only.", 
+        "description": "Credit/no-credit only", 
         "hard_req": [], 
         "name": "Doctoral Dissertation (*-)", 
-        "other_req": []
-    }, 
-    "MATH 136": {
-        "choice_req": [
-            [
-                "MATH 126", 
-                "MATH 136"
-            ]
-        ], 
-        "description": "Examines fundamentals of logic, set theory, induction, and algebraic structures with applications to computing; finite state machines; and limits of computability. ", 
-        "hard_req": [], 
-        "name": "Foundations of Computing I (4) QSR", 
-        "other_req": [
-            "CSE 143"
-        ]
-    }, 
-    "MUSIC 403": {
-        "choice_req": [
-            [
-                "CSE 457", 
-                "ART 380", 
-                "MUSIC 403"
-            ]
-        ], 
-        "description": "Introduction to basic principles of computer generated animation. Focus on the modeling and lighting of animated characters. Students from art, CSE, and music team up on projects to be built on commercially-available modeling and lighting packages. ", 
-        "hard_req": [], 
-        "name": "Computer Animation (5)", 
-        "other_req": []
-    }, 
-    "STAT 391": {
-        "choice_req": [
-            [
-                "CSE 326", 
-                "CSE 332"
-            ], 
-            [
-                "STAT 390", 
-                "STAT 391"
-            ]
-        ], 
-        "description": "Principal ideas and developments in artificial intelligence: Problem solving and search, game playing, knowledge representation and reasoning, uncertainty, machine learning, natural language processing. Not open for credit to students who have completed CSE 415. ", 
-        "hard_req": [], 
-        "name": "Introduction to Artificial Intelligence (3)", 
-        "other_req": [
-            "recommended: CSE 312"
-        ]
-    }, 
-    "equivalent": {
-        "choice_req": [
-            [
-                "CSE 421", 
-                "equivalent"
-            ]
-        ], 
-        "description": "Intensive introduction to artificial intelligence: Problem solving and search, game playing, knowledge representation and reasoning, uncertainty, machine learning, natural language processing. ", 
-        "hard_req": [], 
-        "name": "Artificial Intelligence I (4)", 
-        "other_req": [
-            "exposure to logic, probability, and statistics", 
-            "CSE major"
-        ]
-    }, 
-    "equivalent CSE majors only": {
-        "choice_req": [
-            [
-                "CSE major and CSE 326", 
-                "equivalent CSE majors only"
-            ]
-        ], 
-        "description": "Principles of design of efficient algorithms: recursion, divide and conquer, balancing, dynamic programming, greedy method, network flow, linear programming. Correctness and analysis of algorithms. NP-completeness. ", 
-        "hard_req": [], 
-        "name": "Design and Analysis of Algorithms I (4)", 
-        "other_req": []
-    }, 
-    "equivalents": {
-        "choice_req": [
-            [
-                "CSE major and CSE 322", 
-                "CSE 326", 
-                "and CSE 378", 
-                "equivalents"
-            ]
-        ], 
-        "description": "Specification, implementation, and testing of large, multiperson, software systems. Topics include abstraction, information hiding, software development environments, and formal specifications. ", 
-        "hard_req": [], 
-        "name": "Software Engineering (4)", 
-        "other_req": []
-    }, 
-    "permission of instructor": {
-        "choice_req": [
-            [
-                "CSE 576/E E 576", 
-                "permission of instructor"
-            ]
-        ], 
-        "description": "Topics vary and may include vision for graphics, probabilistic vision and learning, medical imaging, content-based image and video retrieval, robot vision, or 3D object recognition. ", 
-        "hard_req": [], 
-        "name": "Special Topics in Computer Vision (3)", 
-        "other_req": []
-    }, 
-    "permission of instructor CSE majors only": {
-        "choice_req": [
-            [
-                "CSE 567", 
-                "permission of instructor CSE majors only"
-            ]
-        ], 
-        "description": "Introduction to CMOS technology and circuit design; combinational logic-design alternatives; register-design and system-clocking methodologies; datapath and subsystem design; VLSI system-design methodologies; CAD tools for synthesis, layout, simulation, and validation; design of a complex VLSI chip. ", 
-        "hard_req": [], 
-        "name": "Introduction to VLSI Systems (4)", 
         "other_req": []
     }
 }

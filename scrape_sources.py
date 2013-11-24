@@ -35,10 +35,9 @@ ps = sanitize(ps)
 
 catalog = defaultdict(dict)
 
-#for i in range(len(ps) - 2):
-for i in range(4, 6):
+for i in range(len(ps)):
     #if ps[i].contents[0].next.next.find(CODE) == 0:
-        course = str(ps[i].contents[0].next.next).strip()
+        course_key = str(ps[i].contents[0].next.next).strip()
         name = str(ps[i].contents[0].next.next.next).strip()
         description = str(ps[i]).split('<p>')[2].strip()
         
@@ -48,13 +47,21 @@ for i in range(4, 6):
         choice_req = [] # either/or pre-reqs
         other_req = [] # everything else
         
-        choice_pattern = re.compile(r'.*(either|)(.*) or (.*)')
-        hard_req_pattern = re.compile(r'.{2,6} [0-9]{3}')
+        choice_pattern = re.compile(r'.*either (.*) or (.*)', re.DOTALL)
+        hard_req_pattern = re.compile(r'(.{2,6} [0-9]{3})')
         
         pre_req_index = description.lower().find('Prerequisite'.lower())
         offered_index = description.lower().find('Offered'.lower())
         
         new_description = description[:pre_req_index].strip()
+        
+        catalog[course_key] = {
+            'name': name,
+            'description': new_description,
+            'hard_req': hard_req,
+            'choice_req': choice_req,
+            'other_req': other_req, 
+            }
         
         if pre_req_index != -1: # there are some pre reqs
             pre_req_string = description[pre_req_index + len('Prerequisite: '): offered_index]
@@ -66,7 +73,13 @@ for i in range(4, 6):
                     other_req.append(pre)
                 else:
                     match = re.search(choice_pattern, pre)
-                    if not match:
+                    if match:
+                        courses = match.groups()
+                        c = [course.split(',') for course in courses]
+                        c = list(chain.from_iterable(c)) # flatten the list
+                        c = [course for course in c if course not in ['either', 'or']]
+                        choice_req.append([course.strip() for course in c if len(course) > 3])
+                    else:
                         # it's a hard requirement, or something else
                         match2 = re.search(hard_req_pattern, pre)
                         if match2:
@@ -75,23 +88,10 @@ for i in range(4, 6):
                         else:
                             # it's something else
                             other_req.append(pre)
-                    else:
-                        courses = match.groups()
-                        c = [course.split(',') for course in courses]
-                        c = list(chain.from_iterable(c)) # flatten the list
-                        c = [course for course in c if course not in ['either', 'or']]
-                        choice_req.append([course.strip() for course in c if len(course) > 3])
-                #pre_req.remove(pre)
-        
-        catalog[course] = {
-            'name': name,
-            'description': new_description,
-            'hard_req': hard_req,
-            'choice_req': choice_req,
-            'other_req': other_req, 
-            'i': i
-            }
-
+                catalog[course_key]['hard_req'] = hard_req
+                catalog[course_key]['choice_req'] = choice_req
+                catalog[course_key]['other_req'] = other_req
+                
 data_json = json.dumps(catalog, indent=4, sort_keys=True)
 
 print data_json
